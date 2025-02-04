@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feane</title>
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h2>Feane</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#HOME">HOME</a></li>
+                    <li><a href="#MENU">MENU</a></li>
+                    <li><a href="#ABOUT">ABOUT</a></li>
+                    <li><a href="#TABLE BOOK">TABLE BOOK</a></li>
+                </ul>
+            </div>
+            <div class="icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <button>Order now </button>
+            </div>
+            <div class="bar-icon">
+                <i class="fa-solid fa-bars" onclick="openNav()"></i>
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="container">
+            <div class="row autoplay">
+                <div class="col-lg-6">
+                    <h1>Fast Food restourtant</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deserunt tenetur officia porro
+                        voluptatem quaerat alias delectus rerum animi ratione.</p>
+                    <button>Order now</button>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Fast Food restourtant</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deserunt tenetur officia porro
+                        voluptatem quaerat alias delectus rerum animi ratione.</p>
+                    <button>Order now</button>
+                </div>
+                <div class="col-lg-6">
+                    <h1>Fast Food restourtant</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deserunt tenetur officia porro
+                        voluptatem quaerat alias delectus rerum animi ratione.</p>
+                    <button>Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="dis-card">
+                <div class="card-img">
+                    <img src="assets\img\o1.jpg" alt="img">
+                </div>
+                <div class="card-item">
+                    <h2>Tasty Thursday</h2>
+                    <h2><span>20 % off</span></h2>
+                    <button>Order now</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="dis-card">
+                <div class="card-img">
+                    <img src="assets\img\o2.jpg" alt="img">
+                </div>
+                <div class="card-item">
+                    <h2>Pizza Days</h2>
+                    <h2><span>15 % off</span></h2>
+                    <button>Order now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="food_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                Our Menu
+            </h2>
+        </div>
+        <ul class="filters_menu">
+            <li class="active" data-filter="*">All</li>
+            <li data-filter=".burger">Burger</li>
+            <li data-filter=".pizza">Pizza</li>
+            <li data-filter=".pasta">Pasta</li>
+            <li data-filter=".fries">Fries</li>
+        </ul>
+        <div class="filters-content">
+
+            <div class="row grid" >
+                <div class="col-sm-6 col-lg-4 all pizza">
+                    <div class="box">
+
+                        <div class="img-box">
+                            <img src="assets\img\f1.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Delicious Pizza
+                            </h5>
+                            <p>
+                                Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                voluptatem repellendus sed eaque
+                            </p>
+                            <div class="options">
+                                <h6>
+                                    $20
+                                </h6>
+                                <a href="">
+
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 all burger">
+                    <div class="box">
+                        <div>
+                            <div class="img-box">
+                                <img src="assets\img\f2.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Delicious Burger
+                                </h5>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem repellendus sed eaque
+                                </p>
+                                <div class="options">
+                                    <h6>
+                                        $15
+                                    </h6>
+                                    <a href="">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 all pizza">
+                    <div class="box">
+                        <div>
+                            <div class="img-box">
+                                <img src="assets\img\f3.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Delicious Pizza
+                                </h5>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem repellendus sed eaque
+                                </p>
+                                <div class="options">
+                                    <h6>
+                                        $17
+                                    </h6>
+                                    <a href="">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 all burger">
+                    <div class="box">
+                        <div>
+                            <div class="img-box">
+                                <img src="assets\img\f4.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Tasty Burger
+                                </h5>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem repellendus sed eaque
+                                </p>
+                                <div class="options">
+                                    <h6>
+                                        $12
+                                    </h6>
+                                    <a href="">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 all burger">
+                    <div class="box">
+                        <div>
+                            <div class="img-box">
+                                <img src="assets\img\f5.png" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Tasty Burger
+                                </h5>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem repellendus sed eaque
+                                </p>
+                                <div class="options">
+                                    <h6>
+                                        $14
+                                    </h6>
+                                    <a href="">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 all pasta">
+                    <div class="box">
+                        <div>
+                            <div class="img-box">
+                                <img src="assets\img\f6.png" alt="img">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Delicious Pasta
+                                </h5>
+                                <p>
+                                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam
+                                    voluptatem repellendus sed eaque
+                                </p>
+                                <div class="options">
+                                    <h6>
+                                        $10
+                                    </h6>
+                                    <a href="">
+
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+        <div class="btn-box mt-4">
+           <button type="button" class="mb-4"> <a href="">
+            View More
+        </a></button>
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-lg-block d-md-none d-none ">
+                <div class="about-img ">
+                    <img src="assets\img\about-img.png" alt="img">
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="about-content">
+                    <h1>We Are Feane</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat cumque explicabo minima eum
+                        reprehenderit? Qui porro deserunt nostrum vero error tempore saepe tempora ea cumque modi quo
+                        cupiditate vitae voluptate alias, accusantium veritatis suscipit expedita similique iusto
+                        praesentium molestias omnis! Exercitationem facere temporibus sunt debitis sint voluptatibus
+                        aspernatur, reprehenderit deserunt.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section class="booking">
+    <div class="container">
+        <div class="form-heading">
+            <h1>Book A Table</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form">
+                    <div class="row">
+                        <div class="col-lg-12 mb-4">
+                            <input type="Name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                        </div>
+                        <div class="col-lg-12 mb-4">
+                            <input type="number" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Phone Number">
+                        </div>
+                        <div class="col-lg-12 mb-4">
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Your Email">
+                        </div>
+                        <div class="col-lg-12 mb-4">
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="How many persons">
+                        </div>
+                        <div class="col-lg-12 mb-4">
+                            <input type="date" class="form-control" id="exampleFormControlInput1"
+                                placeholder="dd/mm/yy">
+                        </div>
+                        <div class="col-12-lg mb-4">
+                            <button>BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14194.304152480934!2d78.0086231!3d27.2010588!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbfad25a9ff4f79a7!2sAshok%20Cosmos%20Mall!5e0!3m2!1sen!2sin!4v1675940644773!5m2!1sen!2sin"
+                        width="100%" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<section class="client">
+    <div class="container">
+        <div class="client-heading">
+            <h1>what Says Our Customers</h1>
+        </div>
+        <div class="row autoplay1">
+            <div class="col-lg-4">
+                <div class="review">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia beatae voluptates autem
+                        tempore. Sunt dicta, praesentium natus ad deleniti cupiditate.</p>
+                    <div class="client-name">
+                        <h5>chanchal</h5>
+                    </div>
+                    <p>Lorem, ipsum</p>
+                </div>
+                <div class="client-img">
+                    <img src="assets\img\client2.jpg" alt="img">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="review">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia beatae voluptates autem
+                        tempore. Sunt dicta, praesentium natus ad deleniti cupiditate.</p>
+                    <div class="client-name">
+                        <h5>poonam</h5>
+                    </div>
+                    <p>Lorem, ipsum</p>
+                </div>
+                <div class="client-img">
+                    <img src="assets\img\client1.jpg" alt="img">
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="review">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia beatae voluptates autem
+                        tempore. Sunt dicta, praesentium natus ad deleniti cupiditate.</p>
+                    <div class="client-name">
+                        <h5>poonam</h5>
+                    </div>
+                    <p>Lorem, ipsum</p>
+                </div>
+                <div class="client-img">
+                    <img src="assets\img\client2.jpg" alt="img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>Contact Us</h2>
+                <div class="footer-icon-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>loaction</p>
+                </div>
+                <div class="footer-icon-icon">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Call +0110008273862</p>
+                </div>
+                <div class="footer-icon-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>demo@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h2>Feane</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, sunt deserunt. Obcaecati beatae aperiam
+                    ipsum doloribus recusandae!</p>
+                <div class="footer-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <h2>Opening Hours</h2>
+                <p>Everyday</p>
+                <p>10:00 AM to 5:00 PM</p>
+            </div>
+            <div class="col-12-lg">
+                <div class="copyright">
+                    &copy 2023 All Rights Reserved By Free Html Templates
+                </div>
+            </div>
+            <div class="col-12-lg">
+                <div class="copy">
+                    &copy 2023 Distributed By ThemeWagon
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+    integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="assets\js\script.js"></script>
+</body>
+</html>
